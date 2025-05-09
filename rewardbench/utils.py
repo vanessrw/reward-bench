@@ -39,7 +39,7 @@ from rewardbench.models import REWARD_MODEL_CONFIG
 # CORE_EVAL_SET = "allenai/reward-bench"
 
 # dataset cohere (dataset indo)
-CORE_EVAL_SET = "CohereLabsCommunity/multilingual-reward-bench"
+#CORE_EVAL_SET = "CohereLabsCommunity/multilingual-reward-bench"
 # dataset sendiri
 CORE_EVAL_SET = "vanessrw/TA"
 
@@ -332,8 +332,8 @@ def load_eval_dataset(
         # raw_dataset = load_dataset(CORE_EVAL_SET, split="filtered")
 
         #dataset cohere
-        raw_dataset = load_dataset(CORE_EVAL_SET, name="ind_Latn", split="test")
-        raw_dataset = raw_dataset.rename_column("category", "subset")
+        # raw_dataset = load_dataset(CORE_EVAL_SET, name="ind_Latn", split="test")
+        # raw_dataset = raw_dataset.rename_column("category", "subset")
         # dataset sendiri
         raw_dataset = load_dataset(CORE_EVAL_SET, split="test")
 
